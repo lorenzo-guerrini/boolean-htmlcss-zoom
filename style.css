@@ -8,14 +8,18 @@
 
 body {
     background-color: black;
+    font-family: 'Lato', sans-serif;
 }
 
 .meeting-container {
-    height: calc(100vh - 55px);
+    padding-top: 85px;
+    padding-bottom: 15px;
+    height: calc(100vh - 155px);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    overflow: auto;
 }
 
 .meeting-container .user {
@@ -34,7 +38,6 @@ body {
     left: 0;
     padding: 5px;
     background-color: rgba(140, 140, 140, 0.5);
-    font-family: 'Lato', sans-serif;
     color: white;
     font-size: 9px;
 }
@@ -49,4 +52,47 @@ body {
     width: 100%;
     background-color: #272727;
     display: flex;
+    justify-content: space-between;
+    min-width: 700px;
+}
+
+.bottom-bar .bar-section {
+    display: flex;
+}
+
+.bottom-bar .bar-section .bar-item {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    align-items: center;
+}
+
+.bottom-bar .bar-section .bar-item .item-icon {
+    font-size: 17px;
+}
+
+.bottom-bar .bar-section .bar-item .item-description {
+    font-size: 9px;
+    margin: 7px 0;
+}
+
+.bottom-bar .bar-section .bar-item .item-more {
+    font-size: 8px;
+    margin: 2px 15px;
+}
+
+.bottom-bar .bar-section #share-screen {
+    margin-right: 15px;
+}
+
+.bottom-bar .bar-section #share-screen .item-icon{
+    color: #4BC800;
+}
+
+.bottom-bar .bar-section #end-meeting {
+    color: #FF0000;
+    background-color: #4A4A4A;
 }
