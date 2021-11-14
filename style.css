@@ -10,6 +10,7 @@
 body {
     background-color: black;
     font-family: 'Lato', sans-serif;
+    min-width: 700px;
 }
 
 .view-settings-item, .bar-item {
@@ -83,7 +84,6 @@ body {
     background-color: #272727;
     display: flex;
     justify-content: space-between;
-    min-width: 700px;
 }
 
 .bottom-bar .bar-section {
