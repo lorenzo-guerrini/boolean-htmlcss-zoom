@@ -11,6 +11,28 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+.view-settings {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    z-index: 999;
+    color: white;
+}
+
+.view-settings .view-settings-item {
+    float: left;
+    display: flex;
+    background-color: #4A4A4A;
+    padding: 3px;
+    font-size: 9px;
+    margin: 3px;
+    border-radius: 3px;
+}
+
+.view-settings .view-speaker .view-settings-item-icon {
+    margin-right: 3px;
+}
+
 .meeting-container {
     padding-top: 85px;
     padding-bottom: 15px;
@@ -95,4 +117,8 @@ body {
 .bottom-bar .bar-section #end-meeting {
     color: #FF0000;
     background-color: #4A4A4A;
+}
+
+.view-settings-item, .bar-item {
+    cursor: pointer;
 }
