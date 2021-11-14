@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+/* General */
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +12,11 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+.view-settings-item, .bar-item {
+    cursor: pointer;
+}
+
+/* View settings */
 .view-settings {
     position: absolute;
     top: 0;
@@ -33,6 +39,7 @@ body {
     margin-right: 3px;
 }
 
+/* Webcams */
 .meeting-container {
     padding-top: 85px;
     padding-bottom: 15px;
@@ -68,6 +75,7 @@ body {
     margin-right: 2px;
 }
 
+/* Bottom bar */
 .bottom-bar {
     bottom: 0;
     height: 55px;
@@ -117,8 +125,4 @@ body {
 .bottom-bar .bar-section #end-meeting {
     color: #FF0000;
     background-color: #4A4A4A;
-}
-
-.view-settings-item, .bar-item {
-    cursor: pointer;
 }
